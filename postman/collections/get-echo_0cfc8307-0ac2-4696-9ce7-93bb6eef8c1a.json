@@ -1,0 +1,89 @@
+{
+    "info": {
+        "_postman_id": "1fa42790-4f27-4dee-9c17-2646888cb4cb",
+        "name": "get-echo",
+        "description": "defaultDescription",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "/get",
+            "id": "2fe758eb-b875-4bca-a935-afbb5687e876",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "https://postman-echo.com/get?foo=bar",
+                    "protocol": "https",
+                    "host": [
+                        "postman-echo",
+                        "com"
+                    ],
+                    "path": [
+                        "get"
+                    ],
+                    "query": [
+                        {
+                            "key": "foo",
+                            "value": "bar"
+                        }
+                    ]
+                },
+                "description": "Postman echo sends back whatever is sent to it."
+            },
+            "response": [
+                {
+                    "id": "34027ec9-7d51-44e6-86e4-1c73386774fe",
+                    "name": "200 OK",
+                    "originalRequest": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "https://postman-echo.com/get?foo=bar",
+                            "protocol": "https",
+                            "host": [
+                                "postman-echo",
+                                "com"
+                            ],
+                            "path": [
+                                "get"
+                            ],
+                            "query": [
+                                {
+                                    "key": "foo",
+                                    "value": "bar"
+                                }
+                            ]
+                        }
+                    },
+                    "status": "OK",
+                    "code": 200,
+                    "_postman_previewlanguage": "json",
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "application/json; charset=utf-8"
+                        }
+                    ],
+                    "cookie": [],
+                    "responseTime": null,
+                    "body": "{\n \"foo\": \"bar\"\n}"
+                }
+            ]
+        }
+    ],
+    "variable": [
+        {
+            "id": "c80b5dfa-0e62-44bb-9c0c-284b29efacd4",
+            "key": "baseUrl",
+            "value": "https://postman-echo.com",
+            "type": "string"
+        },
+        {
+            "id": "0b61cd40-4a60-4e81-8a0b-cf210121ebf2",
+            "key": "get-Url",
+            "value": "https://postman-echo.com",
+            "type": "string"
+        }
+    ]
+}

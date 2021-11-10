@@ -1,0 +1,32 @@
+openapi: 3.0.1
+info:
+  title: defaultTitle
+  description: defaultDescription
+  version: '0.1'
+servers:
+  - url: https://postman-echo.com
+paths:
+  /get:
+    get:
+      description: Postman echo sends back whatever is sent to it.
+      parameters:
+        - name: foo
+          in: query
+          schema:
+            type: string
+          example: bar
+      responses:
+        '200':
+          description: 200 OK
+          content:
+            application/json; charset=utf-8:
+              schema:
+                type: string
+              examples: 
+                200 OK:
+                  value:
+                    foo: bar
+      servers:
+        - url: https://postman-echo.com
+    servers:
+      - url: https://postman-echo.com
